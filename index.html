@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>倒计时实例示范</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+   <style type="text/css">
+       *{padding: 0;margin:0;}
+       .time-box{width:650px;height:50px;margin:50px auto; font:600 20px/50px "微软雅黑"}
+       .time-box span{color:#f00; margin:0 10px;}
+   </style>
+</head>
+<body>
+    <div class="time-box"><b>杯具，离过年还有这么久啊</b>
+        <div id="time-down"></div>
+    </div>
+    <script type="text/javascript" src="countDown.js"></script>
+    <script type="text/javascript">
+        countTime("0:00:00 12/30/2016","time-down");
+    </script>
+</body>
+</html>
