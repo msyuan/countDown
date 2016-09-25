@@ -13,7 +13,7 @@ function countDown(times, objc) {
 	if(time<=0){
 		clearInterval(down);
 	}else{
-		$(objc).html('<span class="minute">' + i + '</span>:<span class="second">' + s + '</span>:<span class="millisecond">' + ms + '</span>');
+        document.getElementById(objc).innerHTML='<span class="minute">' + i + '</span>:<span class="second">' + s + '</span>:<span class="millisecond">' + ms + '</span>';
 		down=setTimeout(function() {
 			countDown(times, objc);
 		},30); 
